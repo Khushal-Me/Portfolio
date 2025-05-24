@@ -47,7 +47,7 @@ export const projects: Project[] = [
     ],
     imageUrl: "/MacroMindimg.png?height=400&width=600",
     repoUrl: "https://github.com/Khushal-Me/MacroMind",
-    demoUrl: "https://macro-mind-demo.vercel.app",
+    demoUrl: "https://github.com/Khushal-Me/MacroMind",
     screenshots: [
       "/MM1.png?height=400&width=600",
       "/MM2.png?height=400&width=600",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
   ],
   imageUrl: "/PS1.png?height=400&width=600",
   repoUrl: "https://github.com/Khushal-Me/Privacy-Solution",
-  demoUrl: "null",
+  demoUrl: "https://github.com/Khushal-Me/Privacy-Solution/tree/main/test_thermal_data/test_images_8_bit/annotated_results",
   screenshots: [
     "/PS2.jpeg?height=400&width=600",
     "/PS3.jpeg?height=400&width=600"
@@ -132,7 +132,7 @@ export const projects: Project[] = [
   ],
   imageUrl: "/TK.png?height=400&width=600",
   repoUrl: "https://github.com/Khushal-Me/TermiKnight",
-  demoUrl: "null",
+  demoUrl: "https://github.com/Khushal-Me/TermiKnight",
   screenshots: [
     "/TK.png?height=400&width=600"
   ],
