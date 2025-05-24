@@ -49,17 +49,17 @@ export default function About() {
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
         >
-          <motion.p className="text-lg text-[#DFD0B8] leading-relaxed mb-6" variants={item}>
+          <motion.p className="text-lg text-[#DFD0B8] leading-relaxed mb-6 text-justify" variants={item}>
             I'm Khushal Mehta, an AI Engineer passionate about creating human-centered artificial intelligence
             solutions. With expertise in machine learning, natural language processing, and full-stack development, I
             build AI systems that solve real-world problems while prioritizing user experience.
           </motion.p>
-          <motion.p className="text-lg text-[#DFD0B8] leading-relaxed mb-6" variants={item}>
+          <motion.p className="text-lg text-[#DFD0B8] leading-relaxed mb-6 text-justify" variants={item}>
             My work focuses on developing AI applications that are not only technically robust but also intuitive and
             accessible. I believe in creating technology that enhances human capabilities rather than replacing them,
             with a particular interest in AI for productivity, and communication.
           </motion.p>
-          <motion.p className="text-lg text-[#DFD0B8] leading-relaxed" variants={item}>
+          <motion.p className="text-lg text-[#DFD0B8] leading-relaxed text-justify" variants={item}>
             When I'm not coding, you'll find me exploring the latest AI research.
             I'm constantly learning and experimenting with new technologies to push
             the boundaries of what's possible with AI!
