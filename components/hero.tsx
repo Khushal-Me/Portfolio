@@ -92,7 +92,7 @@ export default function Hero() {
               className="border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20"
               onClick={() => window.open("/resume.pdf", "_blank")}
             >
-              Download Resume
+             View Resume
             </Button>
           </motion.div>
         </motion.div>
