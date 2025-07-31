@@ -38,7 +38,7 @@ export default function ProjectCard({ project, onClick, index, isInView }: Proje
         onClick={onClick}
         className="cursor-pointer"
       >
-        <Card className="overflow-hidden bg-[#393E46] border-[#948979]/30 hover:border-[#948979] transition-all duration-300 h-full flex flex-col hover:shadow-lg hover:shadow-[#948979]/20">
+        <Card className="overflow-hidden bg-[#222831] border-[#948979]/30 hover:border-[#948979] transition-all duration-300 h-full flex flex-col hover:shadow-lg hover:shadow-[#948979]/20">
           <div className="relative h-48 w-full overflow-hidden">
             <Image
               src={project.imageUrl || "/placeholder.svg"}

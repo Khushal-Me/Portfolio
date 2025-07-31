@@ -72,7 +72,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="py-20 bg-[#222831]" ref={ref}>
+    <section id="projects" className="py-20 bg-[#393E46]" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-[#DFD0B8] mb-8 text-center"

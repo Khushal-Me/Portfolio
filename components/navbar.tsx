@@ -64,6 +64,14 @@ export default function Navbar() {
                 About
               </motion.button>
               <motion.button
+                onClick={() => scrollToSection("experience")}
+                className="text-[#DFD0B8] hover:text-[#948979] transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Experience
+              </motion.button>
+              <motion.button
                 onClick={() => scrollToSection("projects")}
                 className="text-[#DFD0B8] hover:text-[#948979] transition-colors"
                 whileHover={{ scale: 1.05 }}
@@ -121,11 +129,20 @@ export default function Navbar() {
                 About
               </motion.button>
               <motion.button
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("experience")}
                 className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] rounded-md w-full text-left"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
+              >
+                Experience
+              </motion.button>
+              <motion.button
+                onClick={() => scrollToSection("projects")}
+                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] rounded-md w-full text-left"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
               >
                 Projects
               </motion.button>
@@ -134,11 +151,11 @@ export default function Navbar() {
                 className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] rounded-md w-full text-left"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 }}
+                transition={{ delay: 0.4 }}
               >
                 Contact
               </motion.button>
-              <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }}>
+              <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }}>
                 <Button
                   variant="outline"
                   className="border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20 w-full mt-2"
