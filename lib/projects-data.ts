@@ -9,6 +9,7 @@ export type Project = {
   repoUrl: string
   demoUrl: string
   screenshots: string[]
+  priority?: number // For loading optimization
 }
 
 export const projects: Project[] = [
@@ -24,13 +25,14 @@ export const projects: Project[] = [
       "Responsive design optimized for desktop and mobile gameplay",
       "Lightning-fast AI response times with smooth user experience"
     ],
-    imageUrl: "/SS1.png?height=400&width=600",
+    imageUrl: "/SS1.png",
     repoUrl: "https://github.com/Khushal-Me/Simulated-Souls",
     demoUrl: "https://youtu.be/j0xN0xDdLRU",
     screenshots: [
-      "/SS2.png?height=400&width=600",
-      "/SS3.png?height=400&width=600"
+      "/SS2.png",
+      "/SS3.png"
     ],
+    priority: 1,
   },
   {
     id: "macro-mind",
@@ -45,9 +47,10 @@ export const projects: Project[] = [
       "Supports 200+ concurrent users",
       "95% accuracy in food recognition",
     ],
-    imageUrl: "/MacroMindimg.png?height=400&width=600",
+    imageUrl: "/MacroMindimg.png",
     repoUrl: "https://github.com/Khushal-Me/MacroMind",
     demoUrl: "https://github.com/Khushal-Me/MacroMind",
+    priority: 2,
     screenshots: [
       "/MM1.png?height=400&width=600",
       "/MM2.png?height=400&width=600",
