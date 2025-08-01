@@ -407,7 +407,7 @@ export default function ProjectDetail({ project, onClose, onNext, onPrevious }: 
                     onMouseLeave={handleMouseLeave}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
+                    Demo
                   </Button>
                 </motion.div>
 

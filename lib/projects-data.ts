@@ -212,5 +212,25 @@ export const projects: Project[] = [
   screenshots: [
     "/SG.png?height=400&width=600"
   ],
+},
+{
+  id: "simulated-souls",
+  title: "Simulated Souls",
+  description: "Immersive AI-powered text adventure game combining Google's Gemini storytelling with Cloudflare's AI image generation for real-time visual narratives.",
+  longDescription: "Simulated Souls is a groundbreaking interactive storytelling experience that merges cutting-edge AI technologies to create dynamic, immersive text adventures. The game leverages Google's Gemini storytelling for rich, contextual narrative generation while utilizing Cloudflare's stable-diffusion-xl-lightning model to create stunning visual artwork that accompanies every scene in real-time. Built with React 19 and TypeScript, the application features a sophisticated proxy server architecture for seamless API integration and CORS handling. Players make choices that directly influence both story progression and generated imagery, creating unique adventures with each playthrough. The game showcases advanced prompt engineering, real-time AI service integration, and responsive design principles. With lightning-fast response times and smooth transitions between story beats, Simulated Souls demonstrates the potential of combining multiple AI services to create compelling interactive entertainment. The project includes comprehensive error handling, loading states, and a polished user interface that works seamlessly across desktop and mobile platforms.",
+  techStack: ["React", "TypeScript", "Tailwind CSS", "Vite", "Express.js", "Gemini API", "Cloudflare Workers AI", "AI/ML", "Real-Time"],
+  impact: [
+    "Real-time AI-powered storytelling with dynamic image generation",
+    "Advanced proxy server architecture for seamless API integration",
+    "Responsive design optimized for desktop and mobile gameplay",
+    "Lightning-fast AI response times with smooth user experience"
+  ],
+  imageUrl: "/SS1.png?height=400&width=600",
+  repoUrl: "https://github.com/Khushal-Me/Simulated-Souls",
+  demoUrl: "https://youtu.be/j0xN0xDdLRU",
+  screenshots: [
+    "/SS2.png?height=400&width=600",
+    "/SS3.png?height=400&width=600"
+  ],
 }
 ]
