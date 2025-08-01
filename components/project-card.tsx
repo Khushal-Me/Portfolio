@@ -38,40 +38,41 @@ export default function ProjectCard({ project, onClick, index, isInView }: Proje
         onClick={onClick}
         className="cursor-pointer"
       >
-        <Card className="overflow-hidden bg-[#222831] border-[#948979]/30 hover:border-[#948979] transition-all duration-300 h-full flex flex-col hover:shadow-lg hover:shadow-[#948979]/20">
+        <Card className="overflow-hidden bg-gradient-to-br from-[#222831] to-[#1a1f26] border-[#948979]/30 hover:border-[#948979] transition-all duration-500 h-full flex flex-col hover:shadow-2xl hover:shadow-[#948979]/20 group">
           <div className="relative h-48 w-full overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#222831]/80 via-transparent to-transparent z-10" />
             <Image
               src={project.imageUrl || "/placeholder.svg"}
               alt={project.title}
               fill
-              className="object-cover transition-transform duration-500 hover:scale-105"
+              className="object-cover transition-all duration-700 group-hover:scale-110"
             />
+            <div className="absolute top-4 right-4 z-20">
+              <Badge className="bg-[#948979]/90 text-[#222831] font-semibold">
+                {project.techStack[0]}
+              </Badge>
+            </div>
           </div>
           <CardContent className="p-6 flex-grow">
-            <h3 className="text-xl font-bold text-[#DFD0B8] mb-2">
+            <h3 className="text-xl font-bold text-[#DFD0B8] mb-3 group-hover:text-[#948979] transition-colors duration-300">
               {project.title}
             </h3>
-            <p className="text-[#DFD0B8]/80 mb-4 line-clamp-3">
+            <p className="text-[#DFD0B8]/80 mb-4 line-clamp-3 leading-relaxed">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2 mt-auto">
               {project.techStack.slice(0, 3).map((tech) => (
-                <Badge key={tech} variant="outline" className="border-[#948979]/50 text-[#DFD0B8]/70">
+                <Badge key={tech} variant="outline" className="border-[#948979]/50 text-[#DFD0B8]/70 hover:bg-[#948979]/20 transition-colors duration-300">
                   {tech}
                 </Badge>
               ))}
               {project.techStack.length > 3 && (
-                <Badge variant="outline" className="border-[#948979]/50 text-[#DFD0B8]/70">
+                <Badge variant="outline" className="border-[#948979]/50 text-[#DFD0B8]/70 bg-[#948979]/10">
                   +{project.techStack.length - 3} more
                 </Badge>
               )}
             </div>
           </CardContent>
-          <CardFooter className="p-6 pt-0 border-t border-[#948979]/20">
-            <div className="text-sm text-[#948979]">
-              {project.impact[0]}
-            </div>
-          </CardFooter>
         </Card>
       </motion.div>
     </motion.div>

@@ -101,28 +101,28 @@ export default function Contact() {
         </motion.h2>
 
         <motion.div
-          className="max-w-md mx-auto text-center"
+          className="max-w-lg mx-auto text-center"
           variants={container}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
         >
-          <motion.p className="text-lg text-[#DFD0B8] mb-8" variants={item}>
+          <motion.p className="text-lg md:text-xl text-[#DFD0B8] mb-10 leading-relaxed" variants={item}>
             I'm always open to discussing new projects, opportunities, or partnerships. Feel free to reach out!
           </motion.p>
 
-          <motion.div className="flex flex-col gap-4" variants={item}>
+          <motion.div className="flex flex-col gap-6" variants={item}>
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} style={{ perspective: 1000 }}>
               <Button
                 variant="outline"
-                className="border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20 flex items-center justify-center gap-2 w-full"
+                className="border-2 border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20 hover:border-[#948979] flex items-center justify-center gap-3 w-full py-4 text-lg font-medium rounded-xl bg-gradient-to-r from-[#222831] to-[#1a1f26] hover:shadow-lg hover:shadow-[#948979]/20 transition-all duration-300"
                 onClick={() => (window.location.href = "mailto:khushaldemehta@gmail.com")}
               >
-                <Mail className="h-5 w-5" />
+                <Mail className="h-6 w-6" />
                 khushaldemehta@gmail.com
               </Button>
             </motion.div>
 
-            <motion.div className="flex gap-4 justify-center" variants={item} style={{ perspective: 1000 }}>
+            <motion.div className="flex gap-6 justify-center" variants={item} style={{ perspective: 1000 }}>
               <motion.div
                 ref={githubRef}
                 style={{
@@ -138,11 +138,11 @@ export default function Contact() {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20 h-12 w-12"
+                  className="border-2 border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20 hover:border-[#948979] h-14 w-14 rounded-xl bg-gradient-to-br from-[#222831] to-[#1a1f26] hover:shadow-lg hover:shadow-[#948979]/20 transition-all duration-300"
                   onClick={() => window.open("https://github.com/Khushal-Me", "_blank")}
                 >
                   <motion.div style={{ transform: "translateZ(5px)" }}>
-                    <Github className="h-6 w-6" />
+                    <Github className="h-7 w-7" />
                   </motion.div>
                   <span className="sr-only">GitHub</span>
                 </Button>
@@ -163,11 +163,11 @@ export default function Contact() {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20 h-12 w-12"
+                  className="border-2 border-[#948979] text-[#DFD0B8] hover:bg-[#948979]/20 hover:border-[#948979] h-14 w-14 rounded-xl bg-gradient-to-br from-[#222831] to-[#1a1f26] hover:shadow-lg hover:shadow-[#948979]/20 transition-all duration-300"
                   onClick={() => window.open("https://www.linkedin.com/in/khushal-mehta/", "_blank")}
                 >
                   <motion.div style={{ transform: "translateZ(5px)" }}>
-                    <Linkedin className="h-6 w-6" />
+                    <Linkedin className="h-7 w-7" />
                   </motion.div>
                   <span className="sr-only">LinkedIn</span>
                 </Button>
