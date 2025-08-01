@@ -112,7 +112,7 @@ export default function Experience() {
                 <ul className="text-[#DFD0B8] mb-4 space-y-2">
                   {experience.description.map((desc, descIndex) => (
                     <li key={descIndex} className="flex items-start">
-                      <span className="text-[#948979] mr-2 mt-2">•</span>
+                      <span className="text-[#948979] mr-2">•</span>
                       <span>{desc}</span>
                     </li>
                   ))}
