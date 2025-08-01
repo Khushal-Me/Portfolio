@@ -47,11 +47,6 @@ export default function ProjectCard({ project, onClick, index, isInView }: Proje
               fill
               className="object-cover transition-all duration-700 group-hover:scale-110"
             />
-            <div className="absolute top-4 right-4 z-20">
-              <Badge className="bg-[#948979]/90 text-[#222831] font-semibold">
-                {project.techStack[0]}
-              </Badge>
-            </div>
           </div>
           <CardContent className="p-6 flex-grow">
             <h3 className="text-xl font-bold text-[#DFD0B8] mb-3 group-hover:text-[#948979] transition-colors duration-300">
