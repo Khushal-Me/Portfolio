@@ -35,31 +35,6 @@ export const projects: Project[] = [
     priority: 1,
   },
   {
-    id: "macro-mind",
-    title: "MacroMind",
-    description:
-      "Gemini-powered nutrition tracker that analyzes food images and provides detailed nutritional insights.",
-    longDescription:
-      "MacroMind revolutionizes nutrition tracking by leveraging Google's Gemini AI to analyze food images and provide comprehensive nutritional information. Users can simply take a photo of their meal, and MacroMind identifies the food items, estimates portions, and calculates detailed macro and micronutrient content. The application includes personalized dietary recommendations, meal planning features, and progress tracking. MacroMind's API optimization reduced response times dramatically while maintaining high accuracy in food recognition and nutritional analysis.",
-    techStack: ["Python", "AI/ML", "Backend"],
-    impact: [
-      "Reduced API response time from 1400ms to 150ms",
-      "Supports 200+ concurrent users",
-      "95% accuracy in food recognition",
-    ],
-    imageUrl: "/MacroMindimg.png",
-    repoUrl: "https://github.com/Khushal-Me/MacroMind",
-    demoUrl: "https://github.com/Khushal-Me/MacroMind",
-    priority: 2,
-    screenshots: [
-      "/MM1.png?height=400&width=600",
-      "/MM2.png?height=400&width=600",
-      "/MM3.png?height=400&width=600",
-      "/MM4.png?height=400&width=600",
-      "/MM5.png?height=400&width=600",
-    ],
-  },
-  {
     id: "conscient",
     title: "Conscient",
     description: "Mental health AI assistant with mood tracking, Smart diary and personalized wellness recommendations.",
@@ -79,6 +54,53 @@ export const projects: Project[] = [
       "/Conscient2.png?height=400&width=600",
       "/Conscient3.png?height=400&width=600",
       "/Conscient4.png?height=400&width=600",
+    ],
+    priority: 2,
+  },
+  {
+    id: "support-wise",
+    title: "SupportWise",
+    description: "Intelligent support assistant that delivers instant answers through AI-powered FAQ matching and enables seamless ticket creation with admin dashboard.",
+    longDescription: "SupportWise is an intelligent customer support platform that revolutionizes user assistance through AI-powered FAQ matching and comprehensive ticket management. The system understands user context and intent to provide immediate, relevant answers from a curated FAQ dataset, significantly reducing response times and improving user satisfaction. When automated solutions aren't sufficient, SupportWise seamlessly escalates to human support through an integrated ticketing system that captures user details and automatically generates support tickets. The platform features email integration that sends complete chat transcripts to the support team, ensuring continuity and context preservation. The comprehensive admin dashboard provides real-time monitoring of support activities with detailed analytics on total, pending, and resolved tickets. Built with React and TypeScript using Vite for optimal performance, SupportWise demonstrates modern web development practices with a focus on user experience. The application includes secure admin authentication, dark mode support for comfortable viewing, and responsive design that works seamlessly across all devices. This project showcases expertise in AI integration, state management, email automation, and dashboard development while solving real-world customer support challenges.",
+    techStack: ["Web Development", "AI/ML", "Frontend"],
+    impact: [
+      "AI-powered FAQ matching with intelligent context understanding",
+      "Seamless ticket escalation with automated email integration",
+      "Real-time admin dashboard with comprehensive support analytics",
+      "Secure authentication system with responsive dark mode interface"
+    ],
+    imageUrl: "/SW.png",
+    repoUrl: "https://github.com/Khushal-Me/SupportWise",
+    demoUrl: "https://support-wise.vercel.app/",
+    screenshots: [
+      "/SW1.png",
+      "/SW2.png"
+    ],
+    priority: 3,
+  },
+  {
+    id: "macro-mind",
+    title: "MacroMind",
+    description:
+      "Gemini-powered nutrition tracker that analyzes food images and provides detailed nutritional insights.",
+    longDescription:
+      "MacroMind revolutionizes nutrition tracking by leveraging Google's Gemini AI to analyze food images and provide comprehensive nutritional information. Users can simply take a photo of their meal, and MacroMind identifies the food items, estimates portions, and calculates detailed macro and micronutrient content. The application includes personalized dietary recommendations, meal planning features, and progress tracking. MacroMind's API optimization reduced response times dramatically while maintaining high accuracy in food recognition and nutritional analysis.",
+    techStack: ["Python", "AI/ML", "Backend"],
+    impact: [
+      "Reduced API response time from 1400ms to 150ms",
+      "Supports 200+ concurrent users",
+      "95% accuracy in food recognition",
+    ],
+    imageUrl: "/MacroMindimg.png",
+    repoUrl: "https://github.com/Khushal-Me/MacroMind",
+    demoUrl: "https://github.com/Khushal-Me/MacroMind",
+    priority: 4,
+    screenshots: [
+      "/MM1.png?height=400&width=600",
+      "/MM2.png?height=400&width=600",
+      "/MM3.png?height=400&width=600",
+      "/MM4.png?height=400&width=600",
+      "/MM5.png?height=400&width=600",
     ],
   },
   {
