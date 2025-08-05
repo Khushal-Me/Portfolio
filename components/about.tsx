@@ -49,18 +49,27 @@ export default function About() {
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
         >
-          <motion.div className="bg-gradient-to-br from-[#393E46] to-[#2e343a] rounded-2xl p-8 md:p-12 shadow-2xl border border-[#948979]/20" variants={item}>
-            <motion.p className="text-lg md:text-xl text-[#DFD0B8] leading-relaxed mb-8 text-justify" variants={item}>
+          <motion.div 
+            className="bg-gradient-to-br from-[#393E46] to-[#2e343a] rounded-2xl p-8 md:p-12 border border-[#948979]/20 hover:border-[#948979]/60 hover:shadow-[0_0_20px_rgba(148,137,121,0.3)] transition-all duration-300 group relative overflow-hidden my-4" 
+            variants={item}
+            whileHover={{ 
+              scale: 1.02,
+              transition: { duration: 0.3, ease: "easeOut" }
+            }}
+          >
+            {/* Subtle gradient overlay on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#948979]/5 via-transparent to-[#DFD0B8]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl" />
+            <motion.p className="text-lg md:text-xl text-[#DFD0B8] leading-relaxed mb-8 text-justify relative z-10 group-hover:text-[#DFD0B8]/90 transition-colors duration-300" variants={item}>
               I'm Khushal Mehta, an AI Engineer passionate about creating human-centered artificial intelligence
               solutions. With expertise in machine learning, natural language processing, and full-stack development, I
               build AI systems that solve real-world problems while prioritizing user experience.
             </motion.p>
-            <motion.p className="text-lg md:text-xl text-[#DFD0B8] leading-relaxed mb-8 text-justify" variants={item}>
+            <motion.p className="text-lg md:text-xl text-[#DFD0B8] leading-relaxed mb-8 text-justify relative z-10 group-hover:text-[#DFD0B8]/90 transition-colors duration-300" variants={item}>
               My work focuses on developing AI applications that are not only technically robust but also intuitive and
               accessible. I believe in creating technology that enhances human capabilities rather than replacing them,
               with a particular interest in AI for productivity, and communication.
             </motion.p>
-            <motion.p className="text-lg md:text-xl text-[#DFD0B8] leading-relaxed text-justify" variants={item}>
+            <motion.p className="text-lg md:text-xl text-[#DFD0B8] leading-relaxed text-justify relative z-10 group-hover:text-[#DFD0B8]/90 transition-colors duration-300" variants={item}>
               When I'm not coding, you'll find me exploring the latest AI research.
               I'm constantly learning and experimenting with new technologies to push
               the boundaries of what's possible with AI!
