@@ -105,9 +105,26 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="icon" onClick={toggleMenu} className="text-[#DFD0B8]">
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </Button>
+            <motion.div
+              animate={isOpen ? { scale: [1, 1.1, 1] } : {}}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={toggleMenu} 
+                className={`text-[#DFD0B8] transition-all duration-300 ${
+                  isOpen ? 'bg-[#948979]/20 shadow-lg' : ''
+                }`}
+              >
+                <motion.div
+                  animate={{ rotate: isOpen ? 90 : 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                >
+                  {isOpen ? <X size={24} /> : <Menu size={24} />}
+                </motion.div>
+              </Button>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -115,13 +132,23 @@ export default function Navbar() {
       {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            className="md:hidden bg-[#222831] border-t border-[#393E46]"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-          >
+          <>
+            {/* Mobile backdrop with blur effect */}
+            <motion.div
+              className="md:hidden fixed inset-0 bg-[#222831]/90 backdrop-blur-md z-40"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={() => setIsOpen(false)}
+            />
+            <motion.div
+              className="md:hidden bg-[#222831]/95 backdrop-blur-md border-t border-[#393E46] relative z-50"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+            >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <motion.button
                 onClick={() => scrollToSection("about")}
@@ -170,6 +197,7 @@ export default function Navbar() {
               </motion.div>
             </div>
           </motion.div>
+          </>
         )}
       </AnimatePresence>
     </motion.nav>
