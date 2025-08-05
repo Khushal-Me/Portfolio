@@ -30,44 +30,19 @@ export default function ScrollProgressBar() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#948979]/10 via-[#948979]/20 to-[#948979]/10 z-[100] backdrop-blur-sm"
+      className="fixed top-0 left-0 right-0 h-1 bg-[#948979]/10 z-[100]"
       style={{
         opacity: isVisible ? 1 : 0,
         transition: "opacity 0.3s ease",
       }}
     >
       <motion.div
-        className="h-full bg-gradient-to-r from-[#948979] via-[#DFD0B8] to-[#948979] relative"
+        className="h-full bg-gradient-to-r from-[#948979] via-[#DFD0B8] to-[#948979]"
         style={{
           scaleX,
           transformOrigin: "0%",
         }}
-      >
-        {/* Animated glow effect */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-[#948979] via-[#DFD0B8] to-[#948979] blur-sm"
-          style={{
-            opacity: glowOpacity,
-            scaleY: 3,
-          }}
-        />
-        
-        {/* Subtle moving shimmer effect */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
-          animate={{
-            x: ["-100%", "100%"],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          style={{
-            width: "20%",
-          }}
-        />
-      </motion.div>
+      />
     </motion.div>
   )
 }
