@@ -57,35 +57,39 @@ export default function Navbar() {
             <div className="flex items-center space-x-8">
               <motion.button
                 onClick={() => scrollToSection("about")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors"
+                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 About
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("experience")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors"
+                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Experience
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("projects")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors"
+                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Projects
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("contact")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors"
+                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Contact
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
               </motion.button>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
