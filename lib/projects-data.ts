@@ -221,6 +221,23 @@ export const projects: Project[] = [
   ],
 },
 {
+  id: "pnm-image-generator",
+  title: "PNM Image Generator",
+  description: "A lightweight C program for generating Netpbm format images (PBM, PGM, and PPM) with customizable patterns, gradients, and color effects.",
+  longDescription: "PNM Image Generator is a lightweight C program designed to procedurally generate images in the Netpbm format (PBM, PGM, and PPM) with customizable patterns, gradients, and color effects. It's ideal for testing image processing pipelines or creating procedural graphics. The program supports PBM (black and white geometric patterns), PGM (grayscale gradients), and PPM (full-color multi-section gradients, which also generates separate PGM files for R, G, B channels). Key features include: customizable dimensions with automatic validation, support for both ASCII and binary output, fast performance with minimal dependencies, and comprehensive input validation across all parameters (image type, dimensions, format). The architecture is built around a custom `libpnm` library for core image generation and manipulation.",
+  techStack: ["C", "Algorithms"],
+  impact: [
+    "Generate three different image formats (PBM, PGM, PPM)",
+    "Support for both ASCII and raw binary output formats",
+    "Comprehensive input validation and error handling in C",
+    "Automatic extraction of RGB channels into separate PGM files for PPM images"
+  ],
+  imageUrl: "/PNM_Generator.png",
+  repoUrl: "https://github.com/Khushal-Me/PNM-Image-Generator",
+  demoUrl: "https://github.com/Khushal-Me/PNM-Image-Generator",
+  screenshots: ["/PNM_Generator.png"]
+},
+{
   id: "minesweeper-web",
   title: "Minesweeper Web Game",
   description: "Modern, responsive Minesweeper game with dark mode, customizable gameplay, and high score tracking built using HTML5, Tailwind CSS, and JavaScript.",
