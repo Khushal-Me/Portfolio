@@ -221,6 +221,23 @@ export const projects: Project[] = [
   ],
 },
 {
+  id: "pnm-viewer",
+  title: "PNM Viewer",
+  description: "A modern, fast web application for viewing and batch converting NetPBM image formats (PBM, PGM, PPM) to PNG using client-side processing.",
+  longDescription: "PNM Viewer is a modern, fast, and lightweight web application built with React, TypeScript, and Tailwind CSS. It is designed to handle all NetPBM image formats (P1-P6, both ASCII and Binary) entirely on the client side, requiring no server processing. Key features include a dedicated **Image Viewer** for inspecting PBM, PGM, and PPM files with zoom and pan functionality, and a **Batch Converter** tab for converting multiple NetPBM files directly to PNG format simultaneously. The application features a clean, responsive interface utilizing shadcn/ui components, ensuring seamless usability across desktop and mobile devices. This project demonstrates expertise in complex file parsing (for binary formats), modern front-end architecture, and optimized client-side performance.",
+  techStack: ["Web Development","Frontend"],
+  impact: [
+    "Full support for all P1-P6 NetPBM formats (ASCII and Binary)",
+    "Client-side batch conversion of multiple PNM files to PNG",
+    "Features side-by-side image comparison with zoom and pan controls",
+    "Modern, responsive UI built with React, Tailwind CSS, and shadcn/ui"
+  ],
+  imageUrl: "/PNM_Viewer.png",
+  repoUrl: "https://github.com/Khushal-Me/PNM-Viewer",
+  demoUrl: "https://pnm-viewer.vercel.app/",
+  screenshots: ["/PNM_Viewer_1.png", "/PNM_Viewer_2.png"]
+},
+{
   id: "pnm-image-generator",
   title: "PNM Image Generator",
   description: "A lightweight C program for generating Netpbm format images (PBM, PGM, and PPM) with customizable patterns, gradients, and color effects.",
@@ -261,7 +278,7 @@ export const projects: Project[] = [
   title: "Sudoku Web Game",
   description: "Modern, responsive Sudoku puzzle game with automatic puzzle generation, dark mode, and comprehensive scoring system built using HTML5, Tailwind CSS, and JavaScript.",
   longDescription: "This sophisticated Sudoku implementation transforms the beloved number puzzle into a feature-rich web application that combines classic gameplay with modern user experience design. Built with responsive web technologies, the game delivers seamless puzzle-solving experiences across all devices, from desktop computers to mobile phones. The application features an intelligent puzzle generation algorithm that creates unique, solvable Sudoku grids across multiple difficulty levels, ensuring endless gameplay variety and appropriate challenge progression. Advanced UI features include number highlighting for enhanced visibility, real-time mistake tracking, and comprehensive game state management with undo functionality. The integrated scoring system leverages LocalStorage API to maintain persistent leaderboards, creating competitive elements with separate tracking for Easy, Medium, and Hard difficulty levels. Visual enhancements include a polished dark mode toggle system and clean, modern interface design powered by Tailwind CSS utilities. The game incorporates thoughtful UX elements such as progress tracking through timers and mistake counters, intuitive controls for game reset and undo operations, and accessibility-focused design principles. This implementation demonstrates advanced JavaScript programming techniques including puzzle generation algorithms, DOM manipulation, and browser storage management, showcasing how traditional puzzle games can be elevated through contemporary web development practices and user-centered design philosophy.",
-  techStack: ["Web Development", "Game Development", "Algorithms"],
+  techStack: ["Web Development", "Game Development", "Frontend"],
   impact: [
     "Intelligent puzzle generation algorithm with multiple difficulty levels",
     "Comprehensive scoring system with persistent local leaderboards",
