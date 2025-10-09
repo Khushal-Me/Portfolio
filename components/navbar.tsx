@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -47,8 +48,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <motion.div className="flex-shrink-0" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link href="/" className="text-[#DFD0B8] font-bold text-xl">
-              KM
+            <Link href="/">
+              <Image 
+                src="/logo.png" 
+                alt="Logo" 
+                width={32} 
+                height={32}
+                className="rounded-sm"
+              />
             </Link>
           </motion.div>
 

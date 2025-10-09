@@ -18,16 +18,23 @@ export const metadata: Metadata = {
   authors: [{ name: "Khushal Mehta" }],
   creator: "Khushal Mehta",
   metadataBase: new URL('https://khushal-mehta.vercel.app'),
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: "Khushal Mehta | AI Engineer",
     description: "Portfolio of Khushal Mehta, showcasing AI-centric projects and skills",
     type: "website",
     locale: "en_US",
+    images: ['/logo.png'],
   },
   twitter: {
     card: "summary_large_image",
     title: "Khushal Mehta | AI Engineer",
     description: "Portfolio of Khushal Mehta, showcasing AI-centric projects and skills",
+    images: ['/logo.png'],
   },
   robots: {
     index: true,
