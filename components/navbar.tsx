@@ -51,10 +51,11 @@ export default function Navbar() {
             <Link href="/">
               <Image 
                 src="/logo.png" 
-                alt="Logo" 
+                alt="Khushal Mehta - AI Engineer Portfolio" 
                 width={32} 
                 height={32}
                 className="rounded-sm"
+                priority
               />
             </Link>
           </motion.div>
