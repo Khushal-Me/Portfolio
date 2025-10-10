@@ -9,6 +9,7 @@ import Projects from "@/components/projects"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import ScrollProgressBar from "@/components/scroll-progress-bar"
+import BackToTop from "@/components/back-to-top"
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer />
+      <BackToTop />
     </motion.main>
   )
 }

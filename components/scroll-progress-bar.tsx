@@ -30,17 +30,19 @@ export default function ScrollProgressBar() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-[#948979]/10 z-[100]"
+      className="fixed top-0 left-0 right-0 h-1 bg-[#948979]/10 z-[100] group"
       style={{
         opacity: isVisible ? 1 : 0,
         transition: "opacity 0.3s ease",
       }}
+      title="Reading Progress"
     >
       <motion.div
-        className="h-full bg-gradient-to-r from-[#948979] via-[#DFD0B8] to-[#948979]"
+        className="h-full bg-gradient-to-r from-[#948979] via-[#DFD0B8] to-[#948979] shadow-[0_0_10px_rgba(148,137,121,0.5)]"
         style={{
           scaleX,
           transformOrigin: "0%",
+          opacity: glowOpacity,
         }}
       />
     </motion.div>

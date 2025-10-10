@@ -65,39 +65,39 @@ export default function Navbar() {
             <div className="flex items-center space-x-8">
               <motion.button
                 onClick={() => scrollToSection("about")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
+                className="text-[#DFD0B8] hover:text-[#948979] focus:text-[#948979] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 focus:ring-offset-2 focus:ring-offset-[#222831] rounded-sm px-2 py-1 transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("experience")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
+                className="text-[#DFD0B8] hover:text-[#948979] focus:text-[#948979] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 focus:ring-offset-2 focus:ring-offset-[#222831] rounded-sm px-2 py-1 transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Experience
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("projects")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
+                className="text-[#DFD0B8] hover:text-[#948979] focus:text-[#948979] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 focus:ring-offset-2 focus:ring-offset-[#222831] rounded-sm px-2 py-1 transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Projects
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("contact")}
-                className="text-[#DFD0B8] hover:text-[#948979] transition-colors relative group"
+                className="text-[#DFD0B8] hover:text-[#948979] focus:text-[#948979] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 focus:ring-offset-2 focus:ring-offset-[#222831] rounded-sm px-2 py-1 transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Contact
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#948979] to-[#DFD0B8] transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
               </motion.button>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
@@ -160,7 +160,7 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <motion.button
                 onClick={() => scrollToSection("about")}
-                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] rounded-md w-full text-left"
+                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] focus:bg-[#393E46] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 rounded-md w-full text-left transition-all duration-200"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1 }}
@@ -169,7 +169,7 @@ export default function Navbar() {
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("experience")}
-                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] rounded-md w-full text-left"
+                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] focus:bg-[#393E46] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 rounded-md w-full text-left transition-all duration-200"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
@@ -178,7 +178,7 @@ export default function Navbar() {
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("projects")}
-                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] rounded-md w-full text-left"
+                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] focus:bg-[#393E46] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 rounded-md w-full text-left transition-all duration-200"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
@@ -187,7 +187,7 @@ export default function Navbar() {
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection("contact")}
-                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] rounded-md w-full text-left"
+                className="block px-3 py-2 text-[#DFD0B8] hover:bg-[#393E46] focus:bg-[#393E46] focus:outline-none focus:ring-2 focus:ring-[#948979]/50 rounded-md w-full text-left transition-all duration-200"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4 }}
