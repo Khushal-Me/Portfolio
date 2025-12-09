@@ -23,7 +23,7 @@ const experiences: ExperienceItem[] = [
     title: "Machine Learning Engineer Intern",
     company: "Zintlr AI",
     location: "Remote",
-    period: "May 2025 - Present",
+    period: "May 2025 - September 2025",
     description: [
       "Developed and optimized deep learning models using PyTorch and TensorFlow for logistics optimization.",
       "Scaled ML inference pipelines to handle over 10,000 delivery orders in real-time.",
