@@ -14,6 +14,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "equityher",
+    title: "EquityHer",
+    description: "AI-Powered Investment Mentor helping women build financial confidence through risk-free portfolio simulation, personalized mentorship, and interactive learning modules.",
+    longDescription: "EquityHer is a platform designed to help women build financial confidence. It allows users to learn investing without financial risk. The application combines personalized AI mentorship with interactive learning modules. Users can also access a virtual trading simulator. This creates an environment suitable for financial growth and education. Features include AI Mentorship powered by Google Gemini, Risk-Free Practice with $10,000 virtual cash, Personalized Learning, Portfolio Dashboard with AI-driven feedback, and Interactive Chat.",
+    techStack: ["Web Development", "AI/ML", "Frontend"],
+    impact: [
+      "AI-powered investment education platform helping women build financial confidence",
+      "Risk-free portfolio simulation with $10,000 virtual cash",
+      "Personalized mentorship and interactive learning modules",
+      "Built with Next.js, TypeScript, and Google Gemini API"
+    ],
+    imageUrl: "/EquityHer.png",
+    repoUrl: "https://github.com/Khushal-Me/equityher",
+    demoUrl: "https://www.equityher.tech",
+    screenshots: ["/EquityHer1.png", "/EquityHer2.png"],
+    priority: 1,
+  },
+  {
     id: "simulated-souls",
     title: "Simulated Souls",
     description: "Immersive AI-powered text adventure game combining Google's Gemini storytelling with Cloudflare's AI image generation for real-time visual narratives.",
@@ -32,7 +50,7 @@ export const projects: Project[] = [
       "/SS2.png",
       "/SS3.png"
     ],
-    priority: 1,
+    priority: 2,
   },
   {
     id: "conscient",
@@ -55,7 +73,7 @@ export const projects: Project[] = [
       "/Conscient3.png?height=400&width=600",
       "/Conscient4.png?height=400&width=600",
     ],
-    priority: 2,
+    priority: 3,
   },
   {
     id: "support-wise",
@@ -76,7 +94,7 @@ export const projects: Project[] = [
       "/SW1.png",
       "/SW2.png"
     ],
-    priority: 3,
+    priority: 4,
   },
   {
     id: "macro-mind",
@@ -94,7 +112,7 @@ export const projects: Project[] = [
     imageUrl: "/MacroMindimg.png",
     repoUrl: "https://github.com/Khushal-Me/MacroMind",
     demoUrl: "https://github.com/Khushal-Me/MacroMind",
-    priority: 4,
+    priority: 5,
     screenshots: [
       "/MM1.png?height=400&width=600",
       "/MM2.png?height=400&width=600",
