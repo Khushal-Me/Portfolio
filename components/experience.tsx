@@ -20,19 +20,32 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: "1",
-    title: "Machine Learning Engineer Intern",
+    title: "Software Engineer, AI",
+    company: "Enterprise Logistics Platform (Stealth)",
+    location: "United States (Remote)",
+    period: "May 2026 - Present",
+    description: [
+      "Architected an AI-powered supply chain integration layer connecting enterprise ERP data to an LLM natural language interface, reducing complex logistics query times from hours to under 2 seconds across 1M+ daily data points.",
+      "Designed unified data schemas and RAG retrieval pipelines, cutting custom client integration overhead by 40% while maintaining 95%+ retrieval accuracy.",
+      "Engineered scalable data pipelines and AI integrations across 10+ enterprise client deployments, processing 2TB+ of daily telemetry data at 99.9% uptime.",
+      "Served as primary technical liaison for North American deployments, slashing client onboarding time from 6 weeks to 10 days and accelerating sales deal cycles by 30%.",
+    ],
+    technologies: ["Python", "LLM", "RAG", "ERP", "AI Integrations", "Data Pipelines"],
+  },
+  {
+    id: "2",
+    title: "AI Engineer Intern",
     company: "Zintlr AI",
     location: "Remote",
-    period: "May 2025 - September 2025",
+    period: "May 2025 - December 2025",
     description: [
-      "Developed and optimized deep learning models using PyTorch and TensorFlow for logistics optimization.",
-      "Scaled ML inference pipelines to handle over 10,000 delivery orders in real-time.",
-      "Implemented reinforcement learning and computer vision algorithms to enhance dispatch optimization.",
-      "Deployed and monitored production ML models on AWS, ensuring high performance and reliability."
+      "Engineered a real-time ML optimization pipeline on AWS (SageMaker, EC2, S3), cutting infrastructure costs by 30% via automated scaling.",
+      "Developed Python microservices on AWS Lambda and DynamoDB serving AI features, processing 10,000+ daily payloads at sub-second p99 latency.",
+      "Built Pytest unit and integration suites (90% coverage) and automated CI/CD with GitHub Actions.",
+      "Monitored production AI services with AWS CloudWatch, sustaining 99.9% uptime.",
     ],
-    technologies: ["Python", "TensorFlow", "PyTorch", "AWS SageMaker", "AWS Lambda", "Amazon EC2", "AWS Elastic Beanstalk"],
+    technologies: ["Python", "AWS SageMaker", "AWS EC2", "AWS S3", "AWS Lambda", "DynamoDB", "Pytest", "GitHub Actions", "AWS CloudWatch"],
   },
-  // Add more experiences here
 ]
 
 export default function Experience() {
