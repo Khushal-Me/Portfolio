@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL, SOCIAL_LINKS } from "@/lib/site-config"
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -11,30 +12,31 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Khushal Mehta | AI Engineer",
-  description: "Portfolio of Khushal Mehta, showcasing AI-centric projects and skills",
-  generator: 'v0.dev',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | AI Engineer`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
   keywords: ["AI Engineer", "Machine Learning", "Portfolio", "Khushal Mehta", "Full Stack Developer"],
   authors: [{ name: "Khushal Mehta" }],
   creator: "Khushal Mehta",
-  metadataBase: new URL('https://khushal-mehta.vercel.app'),
-  icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
-  },
+  alternates: { canonical: "/" },
+  icons: { icon: "/logo.png", shortcut: "/logo.png", apple: "/logo.png" },
   openGraph: {
-    title: "Khushal Mehta | AI Engineer",
-    description: "Portfolio of Khushal Mehta, showcasing AI-centric projects and skills",
+    title: `${SITE_NAME} | AI Engineer`,
+    description: SITE_DESCRIPTION,
     type: "website",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: "en_US",
-    images: ['/logo.png'],
+    images: [{ url: "/logo.png", alt: `${SITE_NAME} logo` }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khushal Mehta | AI Engineer",
-    description: "Portfolio of Khushal Mehta, showcasing AI-centric projects and skills",
-    images: ['/logo.png'],
+    title: `${SITE_NAME} | AI Engineer`,
+    description: SITE_DESCRIPTION,
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -65,6 +67,20 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} overflow-x-hidden`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: SITE_NAME,
+                url: SITE_URL,
+                jobTitle: "AI Engineer",
+                sameAs: SOCIAL_LINKS,
+                knowsAbout: ["Artificial intelligence", "Machine learning", "Full-stack development"],
+              }),
+            }}
+          />
           {children}
         </ThemeProvider>
       </body>

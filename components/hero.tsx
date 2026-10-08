@@ -85,7 +85,7 @@ export default function Hero() {
           animate="show"
         >
           <motion.h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#DFD0B8] mb-6" variants={item}>
-            Khushal Mehta
+            Khushal Mehta, AI Engineer
           </motion.h1>
           <motion.div className="h-16" variants={item}>
             <motion.p
