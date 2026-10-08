@@ -14,6 +14,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "codearena",
+    title: "CodeArena",
+    description:
+      "Production-grade distributed code execution platform that safely runs user-submitted code in isolated Docker containers and provides real-time feedback.",
+    longDescription:
+      "CodeArena is a distributed code execution platform that validates user-submitted solutions against test cases and delivers live execution updates through WebSockets. The platform combines a React and TypeScript frontend with a Node.js API gateway, Socket.io updates, BullMQ and Redis job processing, Python execution workers, and PostgreSQL persistence. Each submission runs in a fresh, network-disabled Docker container with resource limits, seccomp filtering, a read-only filesystem, and timeout enforcement. The architecture supports horizontal worker scaling, health monitoring, multi-language execution for Python, JavaScript, Java, and C++, and a curated collection of practice problems.",
+    techStack: ["React", "TypeScript", "Node.js", "Python", "Docker", "Redis", "PostgreSQL"],
+    impact: [
+      "Achieved 2.8s P99 execution latency with 50+ concurrent executions",
+      "Built defense-in-depth sandboxing with isolated containers and zero verified escapes",
+      "Implemented real-time queued, running, and completed status updates with WebSockets",
+      "Designed horizontally scalable job processing with BullMQ, Redis, and Python workers",
+      "Supports multi-language execution and 20+ curated practice problems",
+    ],
+    imageUrl: "/CA1.png",
+    repoUrl: "https://github.com/Khushal-Me/CodeArena",
+    demoUrl: "",
+    screenshots: ["/CA1.png", "/CA2.png", "/CA3.png"],
+    priority: 1,
+  },
+  {
     id: "equityher",
     title: "EquityHer",
     description: "AI-Powered Investment Mentor helping women build financial confidence through risk-free portfolio simulation, personalized mentorship, and interactive learning modules.",
