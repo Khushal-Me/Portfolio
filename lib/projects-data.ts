@@ -25,10 +25,10 @@ export const projects: Project[] = [
       "Personalized mentorship and interactive learning modules",
       "Built with Next.js, TypeScript, and Google Gemini API"
     ],
-    imageUrl: "/EquityHer.png",
+    imageUrl: "/Equityher.png",
     repoUrl: "https://github.com/Khushal-Me/equityher",
     demoUrl: "https://www.equityher.tech",
-    screenshots: ["/EquityHer1.png", "/EquityHer2.png"],
+    screenshots: ["/Equityher1.png", "/Equityher2.png"],
     priority: 1,
   },
   {
