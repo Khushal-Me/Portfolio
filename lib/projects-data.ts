@@ -22,7 +22,7 @@ export const projects: Project[] = [
       "CodeArena is a distributed code execution platform that validates user-submitted solutions against test cases and delivers live execution updates through WebSockets. The platform combines a React and TypeScript frontend with a Node.js API gateway, Socket.io updates, BullMQ and Redis job processing, Python execution workers, and PostgreSQL persistence. Each submission runs in a fresh, network-disabled Docker container with resource limits, seccomp filtering, a read-only filesystem, and timeout enforcement. The architecture supports horizontal worker scaling, health monitoring, multi-language execution for Python, JavaScript, Java, and C++, and a curated collection of practice problems.",
     techStack: ["React", "TypeScript", "Node.js", "Python", "Docker", "Redis", "PostgreSQL"],
     impact: [
-      "Achieved 2.8s P99 execution latency with 50+ concurrent executions",
+      "Achieved 2.0s P99 execution latency with 100+ concurrent executions",
       "Built defense-in-depth sandboxing with isolated containers and zero verified escapes",
       "Implemented real-time queued, running, and completed status updates with WebSockets",
       "Designed horizontally scalable job processing with BullMQ, Redis, and Python workers",
